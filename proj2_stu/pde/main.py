@@ -78,7 +78,7 @@ def main(name,size):
         # beta = min(1.0, beta + 0.01)
         
         if s % 10 == 0:
-            save_path = f"./result_beta_annealing/{name}/{size}"
+            save_path = f"./result/{name}/{size}"
             if not os.path.exists(save_path):
                 os.makedirs(save_path)
             cv2.imwrite(f"{save_path}/pde_{s}.bmp", distort)

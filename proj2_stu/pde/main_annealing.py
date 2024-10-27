@@ -83,7 +83,7 @@ def main(name,size):
                 os.makedirs(save_path)
             cv2.imwrite(f"{save_path}/pde_{s}.bmp", distort)
         # Save errors to a JSON file
-    save_path = f"./result/{name}/{size}"
+    save_path = f"./result_beta_annealing/{name}/{size}"
     with open(f"{save_path}/errors.json", "w", encoding="utf-8") as f:
         json.dump(errors, f, indent=4, ensure_ascii=False)
 
